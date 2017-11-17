@@ -11,7 +11,7 @@ using System;
 namespace PeScMusicService.Migrations
 {
     [DbContext(typeof(MusicTipsContext))]
-    [Migration("20171117094725_InitialCreate")]
+    [Migration("20171117120205_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,6 +27,8 @@ namespace PeScMusicService.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("ArtistId");
+
+                    b.Property<int>("Rating");
 
                     b.Property<string>("Text");
 

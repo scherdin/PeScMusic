@@ -27,6 +27,8 @@ namespace PeScMusicService.Migrations
 
                     b.Property<string>("ArtistId");
 
+                    b.Property<int>("Rating");
+
                     b.Property<string>("Text");
 
                     b.HasKey("Id");

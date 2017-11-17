@@ -16,6 +16,7 @@ namespace PeScMusicService.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     ArtistId = table.Column<string>(nullable: true),
+                    Rating = table.Column<int>(nullable: false),
                     Text = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
